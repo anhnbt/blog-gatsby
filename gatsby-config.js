@@ -12,9 +12,9 @@ module.exports = {
     siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
     siteUrl: `https://minimal-blog.lekoarts.de`,
     siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
-    siteLanguage: `en`,
+    siteLanguage: `vi`,
     siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    author: `@anhnbt`,
   },
   plugins: [
     {
@@ -27,18 +27,18 @@ module.exports = {
             slug: `/blog`,
           },
           {
-            title: `About`,
+            title: `Giới thiệu`,
             slug: `/about`,
           },
         ],
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            url: `https://twitter.com/anhnbt`,
           },
           {
-            name: `Homepage`,
-            url: `https://www.lekoarts.de?utm_source=minimal-blog&utm_medium=Starter`,
+            name: `Github`,
+            url: `https://github.com/anhnbt`,
           },
         ],
       },
