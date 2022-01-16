@@ -1,0 +1,39 @@
+---
+title: IIFE - Immediately Invoked Function Expression
+date: 2022-01-16
+description: 
+tags: 
+  - Javascript
+banner: ./iife-immediately-invoked-function-expression.jpg
+---
+
+*IIFE* là từ tắt của *Immediately Invoked Function Expression*, có nghĩa là một Biểu thức hàm (function exression) được chạy ngay lập tức khi được khai báo.
+
+Một khái niệm nữa là Self-Invoking Function (Là một hàm *tự gọi chính nó* (Self-Invoking) một cách tự động mà không cần lời gọi hàm, cách gọi khác IIFE); IIFE là tên gọi phổ biến nhất.
+
+## Cú pháp của IIFE trông như nào?
+
+```
+(function() {
+    console.log('Immediately Invoked Function Expression');
+})();
+```
+
+Có thể khai báo và truyền tham số cho IIFE như sau:
+
+```
+(function(name) {
+    console.log(`Hello ${name}`);
+})('Javascript');
+```
+
+## Sử dụng IIFE khi nào?
+
+IIFE như là một cái hộp đóng gói code của chính nó. Do đó, những biến trong hộp này là private, ở bên ngoài toàn cục (global) không thể truy xuất hay thay đổi được. Và nếu vô tình bạn đặt tên biến giống với global thì cũng không xảy ra lỗi.
+
+IIFE được sử dụng rất nhiều trong các thư viện Javascript. Khi chúng ta nhúng những thư viện này vào website thì sẽ không gặp phải tình trạng bị trùng tên hay bị ghi đè dữ liệu.
+
+## Tham khảo
+
+- [https://developer.mozilla.org/en-US/docs/Glossary/IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
+- [https://en.wikipedia.org/wiki/Immediately_invoked_function_expression](https://en.wikipedia.org/wiki/Immediately_invoked_function_expression)
