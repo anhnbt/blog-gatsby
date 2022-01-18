@@ -1,0 +1,29 @@
+---
+title: Scope là gì?
+date: 2022-01-16
+description: 
+tags: 
+  - Javascript
+banner: ./iife-immediately-invoked-function-expression.jpg
+---
+
+## Các loại phạm vi
+- Global - Toàn cầu
+- Code block - Khối mã: let, const
+- Local scope - Hàm: var, function
+
+### Global
+Khai báo biến bên ngoài không nằm trong code block hay hàm thì được gọi là Glboal.
+Ở bất cứ đâu đều có thể truy cập, gọi biến hay hàm đó
+
+### Code block
+Chỉ có thể truy cập bên trong khối mã đó. Bên ngoài khối không truy cập được.
+- Trong trường hợp dùng if-else, vòng lặp for, while,.. nằm bên trong cặp ngoặc nhọn {}
+- let, const (var là từ khóa global nếu nằm trong cặp ngoặc nhọn {}, nhưng nếu var nằm trong function thì nó thuộc phạm vi hàm không phải là global nên bên ngoài không sử dụng được)
+
+### Local scope
+Khi khai báo biến, hàm bên trong hàm khác, thì chỉ sử dụng được bên trong hàm cha, bên ngoài không sử dụng được
+
+Ví dụ:
+
+to be continued...
