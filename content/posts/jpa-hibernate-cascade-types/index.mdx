@@ -1,0 +1,21 @@
+---
+title: JPA/Hibernate Cascade Types
+date: 2023-07-30
+description: 
+tags: 
+  - Java
+banner: ./jpa-hibernate-cascade-types.jpg
+---
+
+CASCADE là một thuộc tính cho phép tự động áp dụng các thay đổi của một thực thể (entity) lên các thực thể liên quan (related entities). Khi một thực thể được thêm, sửa đổi hoặc xóa, các thực thể liên quan cũng sẽ tự động thực hiện các thao tác tương ứng.
+
+## Các loại CASCADE phổ biến trong Hibernate bao gồm
+
+- CascadeType.ALL: Áp dụng tất cả các thay đổi (Thêm, sửa, xóa) từ thực thể cha tới các thực thể con.
+- CascadeType.PERSIST: Áp dụng thay đổi khi thực thể cha được thêm vào.
+- CascadeType.MERGE: Áp dụng thay đổi khi thực thể cha được sửa đổi.
+- CascadeType.REMOVE: Áp dụng thay đổi khi thực thể cha bị xóa.
+- CascadeType.REFRESH: Áp dụng thay đổi khi thực thể cha được làm mới.
+- CascadeType.DETACH: Áp dụng thay đổi khi thực thể cha được tách ra.
+
+Việc sử dụng CASCADE trong Hibernate giúp đơn giản hóa quá trình lưu trữ và quản lý các đối tượng liên quan, giảm thiểu sự lặp lại và tăng tính nhất quán của dữ liệu.
